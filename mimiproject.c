@@ -138,7 +138,7 @@ int totaldelivre = 0;
         int choi;
     
         while (1) {
-            printf("1. Modifie le nom\n");
+            printf("\n\n1. Modifie le nom\n");
             printf("2. Moditie le N de tele\n");
             printf("3. modifie e-mail\n");
             printf("4. Quitter\n");
@@ -175,7 +175,7 @@ int main() {
     int choice;
     
     while (1) {
-        printf("\t\t\t\t\tSystème de Gestion de Contacts\n");
+        printf("\n\n\t\t\t\t\tSystème de Gestion de Contacts\n");
         printf("1. Ajouter un Contact\n");
         printf("2. Afficher Tous les Contacts\n");
         printf("3. Rechercher un Contact\n");
