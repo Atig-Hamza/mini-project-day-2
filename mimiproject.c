@@ -137,33 +137,34 @@ int totaldelivre = 0;
     void choixMod(){
         int choi;
     
-    while (1) {
-        printf("1. Modifie le nom\n");
-        printf("2. Moditie le N de tele\n");
-        printf("3. modifie e-mail\n");
-        printf("4. Quitter\n");
-        printf("Entrez votre choix : ");
-        scanf("%d", &choi);
-        getchar();
+        while (1) {
+            printf("1. Modifie le nom\n");
+            printf("2. Moditie le N de tele\n");
+            printf("3. modifie e-mail\n");
+            printf("4. Quitter\n");
+            printf("Entrez votre choix : ");
+            scanf("%d", &choi);
+            getchar();
         
-        switch (choi) {
-            case 1:
-                modifieNom();
-                break;
-            case 2:
-                modifieNtele();
-                break;
-            case 3:
-                modifieemail();
-                break;
-            case 4:
-                main();
-            default:
-                printf("Choix invalide veuillez reessayer.\n");
+            switch (choi) {
+                case 1:
+                    modifieNom();
+                    break;
+                case 2:
+                    modifieNtele();
+                    break;
+                case 3:
+                    modifieemail();
+                    break;
+                case 4:
+                    main();
+                    break;
+                default:
+                    printf("Choix invalide veuillez reessayer.\n");
+            }
         }
-    }
     
-    return 0;
+        return 0;
     }
 
 
