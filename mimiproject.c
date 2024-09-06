@@ -137,34 +137,32 @@ int totaldelivre = 0;
     void choixMod(){
         int choi;
     
-        while (1) {
-            printf("\n\n1. Modifie le nom\n");
-            printf("2. Moditie le N de tele\n");
-            printf("3. modifie e-mail\n");
-            printf("4. Quitter\n");
-            printf("Entrez votre choix : ");
-            scanf("%d", &choi);
-            getchar();
+    while (1) {
+        printf("1. Modifie le nom\n");
+        printf("2. Moditie le N de tele\n");
+        printf("3. modifie e-mail\n");
+        printf("4. Quitter\n");
+        printf("Entrez votre choix : ");
+        scanf("%d", &choi);
+        getchar();
         
-            switch (choi) {
-                case 1:
-                    modifieNom();
-                    break;
-                case 2:
-                    modifieNtele();
-                    break;
-                case 3:
-                    modifieemail();
-                    break;
-                case 4:
-                    main();
-                    break;
-                default:
-                    printf("Choix invalide veuillez reessayer.\n");
-            }
+        switch (choi) {
+            case 1:
+                modifieNom();
+                break;
+            case 2:
+                modifieNtele();
+                break;
+            case 3:
+                modifieemail();
+                break;
+            case 4:
+                ajoutercontact();
+            default:
+                printf("Choix invalide veuillez reessayer.\n");
         }
-    
-        return 0;
+    }
+
     }
 
 
@@ -175,7 +173,7 @@ int main() {
     int choice;
     
     while (1) {
-        printf("\n\n\t\t\t\t\tSystème de Gestion de Contacts\n");
+        printf("\t\t\t\t\tSystème de Gestion de Contacts\n");
         printf("1. Ajouter un Contact\n");
         printf("2. Afficher Tous les Contacts\n");
         printf("3. Rechercher un Contact\n");
