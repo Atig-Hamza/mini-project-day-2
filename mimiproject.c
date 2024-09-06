@@ -157,7 +157,7 @@ int totaldelivre = 0;
                 modifieemail();
                 break;
             case 4:
-                ajoutercontact();
+                main();
             default:
                 printf("Choix invalide veuillez reessayer.\n");
         }
