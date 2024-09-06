@@ -16,7 +16,7 @@ int totaldelivre = 0;
         while(getchar() != '\n');
         printf("Numero de telephone: +212/");
         scanf("%d", &T3[totaldelivre]);
-        printf("les info ont enregistrait avec seccess\n");
+        printf("\n\nles info ont enregistrait avec seccess\n");
         
 
         totaldelivre++;
@@ -26,11 +26,11 @@ int totaldelivre = 0;
 
     void affichcontact(){
         if (totaldelivre == 0) {
-        printf("Auccun Contact a etait enrigistrait\n");
+        printf("\n\nAuccun Contact a etait enrigistrait\n\n");
     } else {
-        printf("\ncontact disponibles :\n");
+        printf("\n\ncontact disponibles :\n\n\n");
         for (int i = 0; i < totaldelivre; i++) {
-            printf("Nom: %s\nNumero de telephone: +212%d\nAdresse e-mail:  %s\n",
+            printf("Nom: %s\nNumero de telephone: +212%d\nAdresse e-mail:  %s\n\n\n",
                    T1[i], T3[i], T2[i]);
         }
     }
@@ -46,11 +46,11 @@ int totaldelivre = 0;
 
         for (int i = 0; i < totaldelivre; i++) {
             if (strcmp(T1[i], titreRecherche) == 0) {
-                printf("Nom: %s\nNumero de telephone: +212%d\nAdresse e-mail:  %s\n",T1[i], T3[i], T2[i]);
+                printf("\n\nNom: %s\nNumero de telephone: +212%d\nAdresse e-mail:  %s\n\n\n",T1[i], T3[i], T2[i]);
             return;
         }
     }
-    printf("Contact Non trouver.\n");
+    printf("\n\nContact Non trouver.\n\n\n");
     }
 
 
@@ -171,16 +171,21 @@ int totaldelivre = 0;
 
 int main() {
     int choice;
+    const char *red = "\033[31m";
+    const char *green = "\033[32m";
+    const char *bleu = "\033[34m";
+    const char *reset = "\033[0m";
+    const char *yellow = "\033[33m";
     
     while (1) {
-        printf("\t\t\t\t\tSystème de Gestion de Contacts\n");
-        printf("1. Ajouter un Contact\n");
-        printf("2. Afficher Tous les Contacts\n");
-        printf("3. Rechercher un Contact\n");
-        printf("4. Modifier un Contact\n");
-        printf("5. Supprimer un Contact\n");
-        printf("6. Quitter\n");
-        printf("Entrez votre choix : ");
+        printf("%s\n\n\t\t\t\t\tSysteme de Gestion de Contacts\n%s", yellow, reset);
+        printf("%s1. Ajouter un Contact\n%s", green, reset);
+        printf("%s2. Afficher Tous les Contacts\n%s", green, reset);
+        printf("%s3. Rechercher un Contact\n%s", green, reset);
+        printf("%s4. Modifier un Contact\n%s", green, reset);
+        printf("%s5. Supprimer un Contact\n%s", green, reset);
+        printf("%s6. Quitter\n%s", red, reset);
+        printf("%sEntrez votre choix :%s ", bleu, reset);
         scanf("%d", &choice);
         getchar();
         
