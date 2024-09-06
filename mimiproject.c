@@ -104,7 +104,7 @@ int totaldelivre = 0;
 
         for (int i = 0; i < totaldelivre; i++) {
             if (strcmp(T1[i], titreMiseAJour) == 0) {
-                printf("Entrez le neuvaux numero de telephone: ");
+                printf("Entrez le neuvaux numero de telephone: +212/");
                 scanf("%d", &T3[i]);
                 getchar();
                 printf("la modification effectue avec succes.\n");
